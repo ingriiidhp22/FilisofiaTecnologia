@@ -11,6 +11,11 @@ PoseNet example using p5.js
 let video;
 let poseNet;
 let poses = [];
+let img1;
+
+function preload(){
+  img1=loadImage("gatiko.png ");
+}
 
 function setup() {
   createCanvas(640, 480);
@@ -55,6 +60,7 @@ function drawKeypoints() {
         fill(0, 255, 0);
         noStroke();
         rect(keypoint.position.x, keypoint.position.y, 20, 20);
+        image(img1, pose.nose.x-160, pose.nose.y-180, 300, 300);
       }
     }
   }
