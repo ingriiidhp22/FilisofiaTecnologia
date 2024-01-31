@@ -6,7 +6,7 @@ let img;
 
 function preload() {
   classifier = ml5.imageClassifier('MobileNet');
-  img = loadImage('images/gato14.png');
+  img = loadImage('images/gato03.png');
 }
 
 function setup() {
